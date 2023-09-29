@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val client = OkHttpClient()
         client.newCall(request).enqueue(object: Callback {
             override fun onFailure(call: Call, e: IOException) {
-                print("pizdec")
+                print("gg: ${e.message}")
             }
 
             override fun onResponse(call: Call, response: Response) {
